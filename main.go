@@ -30,6 +30,8 @@ func main() {
 		fmt.Printf("  %s: %s\n", s.Key, s.Value)
 	}
 
+	fmt.Println("Main: ")
+	fmt.Printf("  %s: %s %s\n", i.Main.Path, i.Main.Version, i.Main.Sum)
 	fmt.Println("Dependencies: ")
 	for _, dep := range i.Deps {
 		fmt.Printf("  %s: %s %s\n", dep.Path, dep.Version, dep.Sum)
